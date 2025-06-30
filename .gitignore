@@ -30,8 +30,8 @@ pids
 *.pid.lock
 
 # Directory for placing compiled code
-/build
-/dist
+# /build
+# /dist
 
 # dotenv environment variables file
 .env
