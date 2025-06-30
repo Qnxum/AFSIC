@@ -85,6 +85,71 @@ export const RegisterSection: React.FC = () => {
                   errors={state.errors}
                 />
                 <Input
+                  id="cell-number"
+                  name="cell-number"
+                  label="Cell Number"
+                  placeholder="Enter your cell number"
+                  type="tel"
+                  isRequired
+                  className="dark:text-foreground"
+                  classNames={{
+                    inputWrapper: "dark:bg-default-50 dark:border-default-200",
+                    label: "dark:text-default-600",
+                    input: "dark:text-foreground"
+                  }}
+                />
+                <Input
+                  id="country"
+                  name="country"
+                  label="Country"
+                  placeholder="Enter your country"
+                  className="dark:text-foreground"
+                  classNames={{
+                    inputWrapper: "dark:bg-default-50 dark:border-default-200",
+                    label: "dark:text-default-600",
+                    input: "dark:text-foreground"
+                  }}
+                />
+                <Input
+                  id="company-website"
+                  name="company-website"
+                  label="Company Website"
+                  placeholder="Enter your company website"
+                  type="url"
+                  className="dark:text-foreground"
+                  classNames={{
+                    inputWrapper: "dark:bg-default-50 dark:border-default-200",
+                    label: "dark:text-default-600",
+                    input: "dark:text-foreground"
+                  }}
+                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Input
+                    id="city"
+                    name="city"
+                    label="City"
+                    placeholder="Enter your city"
+                    className="dark:text-foreground"
+                    classNames={{
+                      inputWrapper: "dark:bg-default-50 dark:border-default-200",
+                      label: "dark:text-default-600",
+                      input: "dark:text-foreground"
+                    }}
+                  />
+                  <Input
+                    id="state-province"
+                    name="state-province"
+                    label="State/Province"
+                    placeholder="Enter your state or province"
+                    className="dark:text-foreground"
+                    classNames={{
+                      inputWrapper: "dark:bg-default-50 dark:border-default-200",
+                      label: "dark:text-default-600",
+                      input: "dark:text-foreground"
+                    }}
+                  />
+                </div>
+                <Input
                   id="organization"
                   name="organization"
                   label="Organization"
