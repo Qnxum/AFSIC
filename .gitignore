@@ -1,0 +1,92 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Node.js
+# /node_modules
+# /dist
+# /build
+# /.next/
+# /out/
+# /.svelte-kit/
+# /.vite/
+# /.nuxt/
+# /.vercel/
+# /.netlify/
+# /public/build/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for placing compiled code
+/build
+/dist
+
+# dotenv environment variables file
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# next.js build output
+.next
+out
+
+# nuxt.js build output
+.nuxt
+.output
+
+# sveltekit build output
+.svelte-kit
+
+# vite press build output
+.vitepress/cache
+.vitepress/dist
+
+# Deno files
+.deno/
+.vscode-deno/
+
+# output of bun
+.bun/
+
+# local .npmrc
+.npmrc
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Mac
+.DS_Store
+
+# Jest
+/coverage
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.yml
+.pnp.*
+
+# Node-specific
+node_modules/
+node_modules
