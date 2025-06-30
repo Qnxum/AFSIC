@@ -10,10 +10,5 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1000, // Set to 1000 kB (1 MB) to increase the warning limit
-    rollupOptions: {
-      input: {
-        main: './src/main.tsx'
-      },
-    },
   },
 });
