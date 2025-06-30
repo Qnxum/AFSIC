@@ -7,3 +7,5 @@ Additional references:
 - [Getting started with Vite](https://vitejs.dev/guide/)
 - [Tailwind documentation](https://tailwindcss.com/docs/installation)
 # AFSIC
+
+This project is automatically deployed to GitHub Pages using GitHub Actions.
