@@ -4,7 +4,11 @@ import {defineConfig} from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: './', // Ensure all asset paths are relative for deployment
   server: {
     allowedHosts: true,
+  },
+  build: {
+    chunkSizeWarningLimit: 1000, // Set to 1000 kB (1 MB) to increase the warning limit
   },
 });
