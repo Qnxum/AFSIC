@@ -1,19 +1,23 @@
 import React from "react";
 import { Card, CardBody, CardHeader, Input, Button, Checkbox } from "@heroui/react";
+import { useForm, ValidationError } from '@formspree/react';
 
 export const RegisterSection: React.FC = () => {
-  const [firstName, setFirstName] = React.useState("");
-  const [lastName, setLastName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [organization, setOrganization] = React.useState("");
-  const [role, setRole] = React.useState("");
+  const [state, handleSubmit] = useForm("mjkrlelp");
   const [agreeTerms, setAgreeTerms] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log({ firstName, lastName, email, organization, role, agreeTerms });
-    // Registration logic would go here
-  };
+  if (state.succeeded) {
+    return (
+      <section id="register" className="py-16 gradient-bg">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-white dark:text-foreground mb-4">Thank you for registering!</h2>
+            <p className="text-lg text-white dark:text-default-600">We've received your information and will be in touch soon.</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="register" className="py-16 gradient-bg">
@@ -35,10 +39,10 @@ export const RegisterSection: React.FC = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Input
+                    id="first-name"
+                    name="first-name"
                     label="First Name"
                     placeholder="Enter your first name"
-                    value={firstName}
-                    onValueChange={setFirstName}
                     isRequired
                     className="dark:text-foreground"
                     classNames={{
@@ -48,10 +52,10 @@ export const RegisterSection: React.FC = () => {
                     }}
                   />
                   <Input
+                    id="last-name"
+                    name="last-name"
                     label="Last Name"
                     placeholder="Enter your last name"
-                    value={lastName}
-                    onValueChange={setLastName}
                     isRequired
                     className="dark:text-foreground"
                     classNames={{
@@ -62,11 +66,11 @@ export const RegisterSection: React.FC = () => {
                   />
                 </div>
                 <Input
+                  id="email"
+                  name="email"
                   label="Email Address"
                   placeholder="Enter your email"
                   type="email"
-                  value={email}
-                  onValueChange={setEmail}
                   isRequired
                   className="dark:text-foreground"
                   classNames={{
@@ -75,11 +79,16 @@ export const RegisterSection: React.FC = () => {
                     input: "dark:text-foreground"
                   }}
                 />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
                 <Input
+                  id="organization"
+                  name="organization"
                   label="Organization"
                   placeholder="Enter your organization"
-                  value={organization}
-                  onValueChange={setOrganization}
                   isRequired
                   className="dark:text-foreground"
                   classNames={{
@@ -89,10 +98,10 @@ export const RegisterSection: React.FC = () => {
                   }}
                 />
                 <Input
+                  id="role"
+                  name="role"
                   label="Role/Position"
                   placeholder="Enter your role or position"
-                  value={role}
-                  onValueChange={setRole}
                   isRequired
                   className="dark:text-foreground"
                   classNames={{
@@ -116,7 +125,7 @@ export const RegisterSection: React.FC = () => {
                     color="primary"
                     size="lg"
                     className="font-medium"
-                    isDisabled={!agreeTerms}
+                    isDisabled={state.submitting || !agreeTerms}
                   >
                     Register Now
                   </Button>
