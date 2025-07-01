@@ -64,7 +64,7 @@ export const SpeakersSection: React.FC = () => {
     {
       name: "Michael Bender",
       role: "CHIEF EXECUTIVE OFFICER AND MOJOR SHAREHOLDER, RCD ESPANYOL de BAECELONA ACADEMY SA & IBERCUPINTERNATIONAL SA",
-      image: "/speakers/MICHAEL BENDER.jpeg",
+      image: "/speakers/MICHAEL BENDER.png",
       bio: "Speaker at Africa Sports Investment Conference"
     },
     {
@@ -88,7 +88,7 @@ export const SpeakersSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {speakers.map((speaker, index) => {
             const [isExpanded, setIsExpanded] = React.useState(false);
-            const jpegImage = speaker.name === "Michael Bende"
+            const jpegImage = speaker.name === "Michael Bender"
               ? "/speakers/MICHAEL BENDER.jpeg"
               : speaker.image.replace(".png", ".jpeg");
 
@@ -163,7 +163,7 @@ export const SpeakersSection: React.FC = () => {
             <ModalBody>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {speakers.map((speaker, index) => {
-                  const jpegImage = speaker.name === "Michael Bende"
+                  const jpegImage = speaker.name === "Michael Bender"
                     ? "/speakers/MICHAEL BENDER.jpeg"
                     : speaker.image.replace(".png", ".jpeg");
 
