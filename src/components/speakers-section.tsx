@@ -62,14 +62,14 @@ export const SpeakersSection: React.FC = () => {
       bio: "Speaker at Africa Sports Investment Conference"
     },
     {
-      name: "Michael Bende",
-      role: "CHAIRMAN, GLOBAL ESPORTS FEDERATION; CEO, MBENDE HOLDINGS",
-      image: "/speakers/MICHAEL BENDE.png",
+      name: "Michael Bender",
+      role: "CHIEF EXECUTIVE OFFICER AND MOJOR SHAREHOLDER, RCD ESPANYOL de BAECELONA ACADEMY SA & IBERCUPINTERNATIONAL SA",
+      image: "/speakers/MICHAEL BENDER.jpeg",
       bio: "Speaker at Africa Sports Investment Conference"
     },
     {
       name: "Sumayya Khan",
-      role: "CEO, SOUTH AFRICAN INSTITUTE FOR DRONE SPORTS (SAIDS)",
+      role: "FORMER DEPUTY-DIRECTOR GENERAL OF RECREATION DEVELOPMENT AND SPORT PROMOTION, DEPARTMENT OF SPORT, ARTS AND CULTURE",
       image: "/speakers/SUMAYYA KHAN.png",
       bio: "Speaker at Africa Sports Investment Conference"
     }

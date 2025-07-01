@@ -48,11 +48,11 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Icon icon="lucide:mail" className="text-default-500 mr-2" />
-                <span className="text-default-600">info@afsic2025.com</span>
+                <span className="text-default-600">marketing@asscogroup.com</span>
               </li>
               <li className="flex items-center">
                 <Icon icon="lucide:phone" className="text-default-500 mr-2" />
-                <span className="text-default-600">+27 10 123 4567</span>
+                <span className="text-default-600">+27 638406655</span>
               </li>
             </ul>
           </div>
