@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader, Input, Button, Checkbox } from "@heroui/rea
 import { useForm, ValidationError } from '@formspree/react';
 
 export const RegisterSection: React.FC = () => {
-  const [state, handleSubmit] = useForm("mjkrlelp");
+  const [state, handleSubmit] = useForm("xzzgoyez");
   const [agreeTerms, setAgreeTerms] = React.useState(false);
 
   if (state.succeeded) {
